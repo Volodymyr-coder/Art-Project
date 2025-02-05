@@ -7,7 +7,7 @@ import {
 import { createQuestionElement } from '../views/questionView.js';
 import { createAnswerElement } from '../views/answerView.js';
 import { quizData } from '../data.js';
-import { initFinalPage } from './finalPage.js';
+import { initFinalPage } from './PageInfoAboutSinglWorkOfArt.js';
 
 export const initQuestionPage = () => {
   const userInterface = document.getElementById(USER_INTERFACE_ID);

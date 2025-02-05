@@ -1,7 +1,7 @@
 import { USER_INTERFACE_ID } from '../constants.js';
 import { RESTART_GAME_BUTTON_ID } from '../constants.js';
 import { createFinalPAgeElement } from '../views/finalPageView.js';
-import { initWelcomePage } from '../pages/welcomePage.js';
+import { initWelcomePage } from './welcomePage.js';
 import { quizData } from '../data.js';
 
 export const initFinalPage = () => {

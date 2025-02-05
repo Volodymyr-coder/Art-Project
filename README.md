@@ -30,7 +30,7 @@ src
 └── views
 └── app.js
 └── constants.js
-└── data.js
+└── 
 index.html
 ```
 
@@ -61,14 +61,12 @@ Some examples of online quizes that you might like:
 When you have chosen your goal, you can create tasks as issues on Github and assign them to team members.
 Tasks could look like this, using the [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method) labels for prioritization
 
-- [x] (must have) A user can see one question at a time, stepping through the quiz
-- [ ] (must have) A user can select an answer for each question
-- [ ] (must have) Change the <title>
+- [ ] (must have) have  btn for submit for start (fetch and back data)
+- [ ] (must have) render results on page
+- [ ] (must have) when click to work of art should open page or window with more info about it
+- [ ] (must have) pagination
+- [ ] (must have) loader
 - [ ] (must have) add a favicon
-- [ ] (should have) A user can see what the correct answer is after they selected their answer.
-- [ ] (should have) A user can see their score update in real-time as they select answers
-- [ ] (should have) A user can refresh the page and still have his/her given answers available
-- [ ] (could have) A user can "skip" the question and learn the correct answer, this forfeits the question
-- [ ] (could have) Transition between pages or question look fancy like TypeForm for example
+
 
 You should create tasks that fit with your goal, these tasks serve just as an example.
