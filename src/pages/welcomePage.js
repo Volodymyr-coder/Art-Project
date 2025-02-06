@@ -18,7 +18,7 @@ export const initWelcomePage = () => {
 
 const startQuiz = () => {
   const PlayerInputName = document.getElementById(USER_NAME_INPUT_ID);
-  const playerName = PlayerInputName.value || 'player';
+  const playerName = PlayerInputName.value || 'user';
   quizData.playerName = playerName;
   initQuestionPage();
 };

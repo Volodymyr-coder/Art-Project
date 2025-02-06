@@ -5,8 +5,9 @@
  It is an industry standard to make these variables fully capitalised
 */
 
+export const BASE_URL = 'https://api.europeana.eu/record/v2/search.json'
 export const USER_INTERFACE_ID = 'user-interface';
-export const START_DIVE_IN_ART = 'start-quiz-button';
+export const START_DIVE_IN_ART = 'start-art-button';
 export const ANSWERS_LIST_ID = 'answers-list';
 export const NEXT_QUESTION_BUTTON_ID = 'next-question-button';
 export const SKIP_QUESTION_BUTTON_ID = 'skip-question-button';

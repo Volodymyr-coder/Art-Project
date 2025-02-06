@@ -90,7 +90,7 @@ input#player-name-id {
   margin: 0;
 }
 
-#DIVE-IN-ART {
+#start-art-button {
   background: #001230;
   color: #fff;
   font-weight: 500;
@@ -101,7 +101,7 @@ input#player-name-id {
   border-radius: 20px;
 }
 
-#DIVE-IN-ART:hover {
+#start-art-button:hover {
   background: rgb(0, 85, 160);
   transform: scale(1.03);
 }
