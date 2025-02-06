@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 .centered {
   position: fixed;
   top: 50%;
@@ -43,7 +44,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background-image: url(background-img.jpg);
+  background-image: url(https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/843,/0/default.jpg);
   background-size: cover;
 }
 
@@ -66,6 +67,7 @@ h1 {
   padding: 40px;
   box-shadow: 0 5px 9px rgba(32, 32, 32, 0.165);
 }
+
 .welcome-text {
   font-size: 22px;
   font-weight: bold;
@@ -74,7 +76,7 @@ h1 {
   color: #4a4a4a;
 }
 
-.player-name {
+.user-name {
   color: #4a4a4a;
   font-weight: bold;
   margin: 20px;
@@ -88,7 +90,7 @@ input#player-name-id {
   margin: 0;
 }
 
-#start-quiz-button {
+#DIVE-IN-ART {
   background: #001230;
   color: #fff;
   font-weight: 500;
@@ -99,10 +101,11 @@ input#player-name-id {
   border-radius: 20px;
 }
 
-#start-quiz-button:hover {
+#DIVE-IN-ART:hover {
   background: rgb(0, 85, 160);
   transform: scale(1.03);
 }
+
 .progress-bar-element {
   width: 100%;
   height: 15px;
@@ -111,17 +114,20 @@ input#player-name-id {
   overflow: hidden;
   margin-bottom: 15px;
 }
+
 .progress-bar {
   width: 0%;
   height: 100%;
   background-color: rgb(49, 121, 49);
   transition: width 0.5 ease-in-out;
 }
+
 @keyframes fancyanimate {
   0% {
     opacity: 0;
     transform: scale(0.5);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -221,6 +227,7 @@ ul#answers-list li.wrongAnswer {
   color: green;
   font-weight: bold;
 }
+
 .final-message {
   color: #4a4a4a;
   font-family: Arial, Helvetica, sans-serif;

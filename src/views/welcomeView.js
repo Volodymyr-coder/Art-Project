@@ -1,5 +1,5 @@
-import { START_QUIZ_BUTTON_ID } from '../constants.js';
-import { PLAYER_NAME_INPUT_ID } from '../constants.js';
+import { START_DIVE_IN_ART } from '../constants.js';
+import { USER_NAME_INPUT_ID } from '../constants.js';
 /**
  * Create the welcome screen
  * @returns {Element}
@@ -7,10 +7,10 @@ import { PLAYER_NAME_INPUT_ID } from '../constants.js';
 export const createWelcomeElement = () => {
   const element = document.createElement('div');
   element.innerHTML = String.raw`
-    <h1 class = "welcome-text">Welcome to the Veteran Gamers Quiz</h1>
-    <label for="${PLAYER_NAME_INPUT_ID}" class="player-name"> Player Name </label>
-    <input type="text" id ="${PLAYER_NAME_INPUT_ID}">
-    <button id="${START_QUIZ_BUTTON_ID}">START QUIZ</button>
+    <h1 class = "welcome-text">Welcome to the Page of ART</h1>
+    <label for="${USER_NAME_INPUT_ID}" class="user-name"> User Name </label>
+    <input type="text" id ="${USER_NAME_INPUT_ID}">
+    <button id="${START_DIVE_IN_ART}">DIVE IN ART</button>
   `;
   return element;
 };

@@ -1,7 +1,7 @@
-import { USER_INTERFACE_ID, START_QUIZ_BUTTON_ID } from '../constants.js';
+import { USER_INTERFACE_ID, START_DIVE_IN_ART } from '../constants.js';
 import { createWelcomeElement } from '../views/welcomeView.js';
 import { initQuestionPage } from './PagewithWorkOfArt.js';
-import { PLAYER_NAME_INPUT_ID } from '../constants.js';
+import { USER_NAME_INPUT_ID } from '../constants.js';
 import { quizData } from '../data.js';
 
 export const initWelcomePage = () => {
@@ -12,12 +12,12 @@ export const initWelcomePage = () => {
   userInterface.appendChild(welcomeElement);
 
   document
-    .getElementById(START_QUIZ_BUTTON_ID)
+    .getElementById(START_DIVE_IN_ART)
     .addEventListener('click', startQuiz);
 };
 
 const startQuiz = () => {
-  const PlayerInputName = document.getElementById(PLAYER_NAME_INPUT_ID);
+  const PlayerInputName = document.getElementById(USER_NAME_INPUT_ID);
   const playerName = PlayerInputName.value || 'player';
   quizData.playerName = playerName;
   initQuestionPage();
