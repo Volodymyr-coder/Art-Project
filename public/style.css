@@ -14,6 +14,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+}
+
+.none {
+  display: none;
+}
+
+.welcomeDiv {
+  border: 1px solid black;
+}
+
+.photoDiv {
+  display: flex;
 }
 
 .scrollable {
@@ -66,6 +79,7 @@ h1 {
   border-radius: 10px;
   padding: 40px;
   box-shadow: 0 5px 9px rgba(32, 32, 32, 0.165);
+
 }
 
 .welcome-text {
@@ -106,21 +120,7 @@ input#player-name-id {
   transform: scale(1.03);
 }
 
-.progress-bar-element {
-  width: 100%;
-  height: 15px;
-  background-color: rgb(217, 212, 212);
-  border-radius: 5px;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
 
-.progress-bar {
-  width: 0%;
-  height: 100%;
-  background-color: rgb(49, 121, 49);
-  transition: width 0.5 ease-in-out;
-}
 
 @keyframes fancyanimate {
   0% {
@@ -146,62 +146,6 @@ input#player-name-id {
   animation: fancyanimate 0.7s ease-out forwards;
 }
 
-#answers-list li {
-  padding: 15px 20px;
-  font-size: 18px;
-  color: #141212;
-  cursor: pointer;
-  border: 0.5px solid #000000;
-  border-radius: 20px;
-  margin: 10px 0;
-}
-
-#answers-list li:hover {
-  background: #dff6ff;
-  color: #000000;
-  transform: scale(1.03);
-}
-
-#next-question-button {
-  background: #001230;
-  color: #fff;
-  font-weight: 500;
-  width: 150px;
-  border: none;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 20px;
-}
-
-#next-question-button:hover {
-  background: rgb(0, 85, 160);
-  transform: scale(1.03);
-}
-
-#skip-question-button {
-  background: #001230;
-  color: #fff;
-  font-weight: 500;
-  width: 150px;
-  border: none;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 20px;
-}
-
-#skip-question-button:hover {
-  background: rgb(0, 85, 160);
-  transform: scale(1.03);
-}
-
-ul#answers-list li.correctAnswer {
-  background-color: lightgreen;
-}
-
-ul#answers-list li.wrongAnswer {
-  background-color: rgb(255, 124, 122);
-}
-
 #restart-button-game {
   background: #001230;
   color: #fff;
@@ -213,39 +157,20 @@ ul#answers-list li.wrongAnswer {
   border-radius: 20px;
 }
 
-#restart-button-game:hover {
-  background: rgb(0, 85, 160);
+.show-art {
+  background: #001230;
+  color: #fff;
+  font-weight: 500;
+  width: 120px;
+  border: none;
+  padding: 10px;
+  margin: 0 0 10px 15px;
+  border-radius: 20px;
+}
+
+.show-art:hover {
+  background: rgb(190, 56, 156);
   transform: scale(1.03);
 }
 
-#current-score {
-  color: #000000;
-  margin-bottom: 20px;
-}
-
-#current-score.good-score {
-  color: green;
-  font-weight: bold;
-}
-
-.final-message {
-  color: #4a4a4a;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
-  font-weight: bold;
-  text-align: center;
-  margin: 10px;
-  padding: 5px;
-}
-
-.highlight-correct {
-  background-color: green;
-  font-weight: bold;
-}
-
-.final-gif {
-  margin: 10px auto;
-  max-width: 150%;
-  height: auto;
-  border-radius: 20px;
-}
+.welcomeDiv {}
