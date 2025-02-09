@@ -4,8 +4,8 @@ import { fetchGetPhotos } from './getDataView.js';
 export const fetchAndRenderPhotos = async (value) => {
   const photoDiv = document.createElement('div');
   photoDiv.classList.add('photoDiv');
-  const photoUl = document.createElement('ul')
-  photoUl.classList.add('photoUl')
+  const photoUl = document.createElement('ul');
+  photoUl.classList.add('photoUl');
   document.body.appendChild(photoUl);
 
   try {

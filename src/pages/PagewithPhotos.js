@@ -23,6 +23,7 @@ export const initPagePhoto = (userName) => {
   submitBtn.textContent = 'SHOW ART';
   submitBtn.classList.add('show-art');
 
+  formElem.classList.add('formElem')
   formElem.appendChild(inputEl);
   formElem.appendChild(submitBtn);
 

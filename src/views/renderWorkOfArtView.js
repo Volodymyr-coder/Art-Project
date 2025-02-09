@@ -1,4 +1,3 @@
-
 export const renderPhoto = function (data) {
   return data
     .map(({ webformatURL, largeImageURL }) => {

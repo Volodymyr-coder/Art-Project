@@ -140,6 +140,10 @@ input#player-name-id {
   height: 100%;
 }
 
+.formElem {
+  position: fixed;
+}
+
 .photoUl {
   list-style-type: none;
   display: grid;
@@ -148,7 +152,6 @@ input#player-name-id {
   overflow-y: auto;
   max-height: 80vh;
 }
-
 
 .item {
   box-sizing: border-box;
