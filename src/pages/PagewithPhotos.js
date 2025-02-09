@@ -14,6 +14,7 @@ export const initPagePhoto = (userName) => {
   const formElem = document.createElement('form');
 
   const inputEl = document.createElement('input');
+  inputEl.classList.add('input');
 
   welcomeDiv.appendChild(h1);
   welcomeDiv.appendChild(formElem);
@@ -23,7 +24,7 @@ export const initPagePhoto = (userName) => {
   submitBtn.textContent = 'SHOW ART';
   submitBtn.classList.add('show-art');
 
-  formElem.classList.add('formElem')
+  formElem.classList.add('formElem');
   formElem.appendChild(inputEl);
   formElem.appendChild(submitBtn);
 
@@ -40,5 +41,6 @@ export const initPagePhoto = (userName) => {
     e.preventDefault();
     const value = getInputValue();
     fetchAndRenderPhotos(value);
+    inputEl.value = '';
   }
 };
