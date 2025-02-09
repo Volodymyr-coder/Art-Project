@@ -1,7 +1,6 @@
 import { initWelcomePage } from './pages/welcomePage.js';
 
 const loadApp = () => {
-
   initWelcomePage();
 };
 

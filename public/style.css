@@ -14,7 +14,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .none {
@@ -57,7 +56,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background-image: url(https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/843,/0/default.jpg);
+  background-image: url('./fern-1250903_1280.jpg');
   background-size: cover;
 }
 
@@ -79,7 +78,6 @@ h1 {
   border-radius: 10px;
   padding: 40px;
   box-shadow: 0 5px 9px rgba(32, 32, 32, 0.165);
-
 }
 
 .welcome-text {
@@ -120,43 +118,6 @@ input#player-name-id {
   transform: scale(1.03);
 }
 
-
-
-@keyframes fancyanimate {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-#answers-list {
-  color: #030303;
-  font-weight: 500;
-  width: 100%;
-  padding: 10px;
-  margin: 20px 0;
-  text-align: left;
-  border-radius: 4;
-  opacity: 0;
-  animation: fancyanimate 0.7s ease-out forwards;
-}
-
-#restart-button-game {
-  background: #001230;
-  color: #fff;
-  font-weight: 500;
-  width: 150px;
-  border: none;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 20px;
-}
-
 .show-art {
   background: #001230;
   color: #fff;
@@ -173,4 +134,29 @@ input#player-name-id {
   transform: scale(1.03);
 }
 
-.welcomeDiv {}
+.photoDiv {
+  display: flex;
+  width: 90%;
+  height: 100%;
+}
+
+.photoUl {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+
+.item {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

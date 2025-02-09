@@ -30,7 +30,7 @@ src
 └── views
 └── app.js
 └── constants.js
-└── 
+└──
 index.html
 ```
 
@@ -61,12 +61,11 @@ Some examples of online quizes that you might like:
 When you have chosen your goal, you can create tasks as issues on Github and assign them to team members.
 Tasks could look like this, using the [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method) labels for prioritization
 
-- [ ] (must have) have  btn for submit for start (fetch and back data)
+- [ ] (must have) have btn for submit for start (fetch and back data)
 - [ ] (must have) render results on page
 - [ ] (must have) when click to work of art should open page or window with more info about it
 - [ ] (must have) pagination
 - [ ] (must have) loader
 - [ ] (must have) add a favicon
-
 
 You should create tasks that fit with your goal, these tasks serve just as an example.
