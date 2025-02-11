@@ -9,7 +9,7 @@ export const fetchGetPhotos = async (value) => {
     lang: 'en',
     safesearch: true,
     page: 1,
-    per_page: 15,
+    per_page: 16,
   });
   const url = `${BASE_URL}/?${PARAMS}`;
 
