@@ -3,7 +3,7 @@ import { fetchGetPhotos } from './getDataView.js';
 
 export const fetchAndRenderPhotos = async (value) => {
   const loader = document.createElement('div');
-  loader.classList.add('centered', 'loader');
+  loader.classList.add('centered', 'loader', 'none');
   document.body.appendChild(loader);
 
   const photoDiv = document.createElement('div');

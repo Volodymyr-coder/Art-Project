@@ -9,7 +9,7 @@ export const initPagePhoto = (userName) => {
   const welcomeDiv = document.createElement('div');
   const h1 = document.createElement('h1');
 
-  h1.textContent = `${userName} welcome to the World of Art!`;
+  h1.textContent = `${userName} welcome to the World of Photo!`;
   h1.classList.add('h1');
   const formElem = document.createElement('form');
 
