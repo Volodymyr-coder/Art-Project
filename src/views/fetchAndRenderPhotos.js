@@ -2,6 +2,10 @@ import { renderPhoto } from './renderWorkOfArtView.js';
 import { fetchGetPhotos } from './getDataView.js';
 
 export const fetchAndRenderPhotos = async (value) => {
+  const loader = document.createElement('div');
+  loader.classList.add('centered', 'loader');
+  document.body.appendChild(loader);
+
   const photoDiv = document.createElement('div');
   photoDiv.classList.add('photoDiv');
   document.body.appendChild(photoDiv);
@@ -22,6 +26,8 @@ export const fetchAndRenderPhotos = async (value) => {
   }
 
   photoUl.innerHTML = '';
+  loader.classList.remove('none');
+  loader.classList.add('block');
 
   try {
     const data = await fetchGetPhotos(value);
@@ -30,5 +36,8 @@ export const fetchAndRenderPhotos = async (value) => {
   } catch (error) {
     console.error('Error fetching photos:', error);
     renderError(error);
+  } finally {
+    loader.classList.remove('block');
+    loader.classList.add('none');
   }
 };
