@@ -1,9 +1,6 @@
 import { START_DIVE_IN_ART } from '../constants.js';
 import { USER_NAME_INPUT_ID } from '../constants.js';
-/**
- * Create the welcome screen
- * @returns {Element}
- */
+
 export const createWelcomeElement = () => {
   const element = document.createElement('div');
   element.innerHTML = String.raw`

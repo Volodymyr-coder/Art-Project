@@ -8,18 +8,25 @@ export const fetchGetPhotos = async (value) => {
     orientation: 'horizontal',
     lang: 'en',
     safesearch: true,
-    per_page: 9,
+    page: 1,
+    per_page: 15,
   });
   const url = `${BASE_URL}/?${PARAMS}`;
+
   try {
     const response = await fetch(url, { method: 'GET' });
     if (!response.ok) {
       throw new Error(`Error: ${response.status}`);
     }
+
     const data = await response.json();
+
+    if (!data.hits || data.hits.length === 0) {
+      throw new Error('No results found for your query.');
+    }
+
     return data;
   } catch (error) {
-    console.error('Fetch error:', error);
     throw error;
   }
 };

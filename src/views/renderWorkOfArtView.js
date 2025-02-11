@@ -3,7 +3,7 @@ export const renderPhoto = function (data) {
     .map(({ webformatURL, largeImageURL }) => {
       return `<li class="item">
      <a href='${largeImageURL}'><img class="img" src="${webformatURL}" alt="Photo" /></a>
-                  </li>`;
+              </li>`;
     })
     .join('');
 };

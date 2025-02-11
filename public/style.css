@@ -75,6 +75,16 @@ h1 {
   padding: 5px;
 }
 
+.h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0px;
+  padding: 5px;
+}
+
 #user-interface {
   background: rgba(255, 255, 255, 0.9);
   width: 90%;
@@ -163,9 +173,20 @@ input#player-name-id {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  overflow-y: auto;
   max-height: 80vh;
   margin-top: 75px;
+}
+
+@media (max-width: 767px) {
+  .photoUl {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .photoUl {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .item {
